@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pupukfarm Indonesia - Pupuk Berkualitas untuk Pertanian Anda</title>
+    <meta
+      name="description"
+      content="Pupukfarm menyediakan pupuk berkualitas tinggi untuk meningkatkan hasil panen dan kesuburan tanah pertanian Anda."
+    />
+    <meta
+      name="keywords"
+      content="Pupuk, Pertanian, Pupuk Organik, Pupuk Kimia, Hasil Panen, Kesuburan Tanah"
+    />
+    <meta name="author" content="Pupukfarm" />
+    <link rel="canonical" href="https://pupukfarm.netlify.app" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pupukfarm.netlify.app" />
+    <meta
+      property="og:title"
+      content="Pupukfarm - Pupuk Berkualitas untuk Pertanian Anda"
+    />
+    <meta
+      property="og:description"
+      content="Pupukfarm menawarkan berbagai jenis pupuk berkualitas tinggi untuk meningkatkan pertumbuhan tanaman dan hasil panen yang optimal."
+    />
+    <meta
+      property="og:image"
+      content="https://pupukfarm.netlify.app/images/logo.png"
+    />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://pupukfarm.netlify.app" />
+    <meta
+      property="twitter:title"
+      content="Pupukfarm - Pupuk Berkualitas untuk Pertanian Anda"
+    />
+    <meta
+      property="twitter:description"
+      content="Dapatkan pupuk terbaik dari Pupukfarm untuk memperbaiki kualitas tanah dan meningkatkan hasil pertanian Anda."
+    />
+    <meta
+      property="twitter:image"
+      content="https://pupukfarm.netlify.app/images/logo.png"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <!-- Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="css.css">
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif; /* Untuk teks utama */
+        }
+        h1, h2, h3 {
+            font-family: 'Merriweather', serif; /* Untuk judul */
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .bounce {
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+
+        .button-hover:hover {
+            background-color: #00c853;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Content -->
+    <main>
+        <!-- Hero Section -->
+        <section
+            id="home"
+            class="relative min-h-screen flex flex-col items-center justify-center bg-cover bg-center px-2"
+            style="
+            background-image: url('/images/bg.jpg');"
+        >
+            <!-- Back Button -->
+                <a href="/index.html" class="absolute left-0 top-0 z-50">
+                    <button class="flex items-center bg-gradient-to-r from-green-700 to-green-500 text-white pl-4 pr-8 py-3 rounded-br-3xl rounded-tr rounded-bl text-lg font-semibold hover:bg-gray-100 hover:text-green-100 hover:scale-105 transform hover:shadow-lg transition-all duration-300 ease-in-out transition-smooth">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                        </svg>
+                        <span class="ml-2 font-semibold">Kembali</span>
+                    </button>
+                </a>
+
+            <!-- Hero Content -->   
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="text-center text-white z-10">
+                <div class="flex-shrink-0 flex justify-center">
+                    <img src="/images/seagrow.png" alt="Logo Pupukfarm" class="mb-6 lg:mb-2 h-64">
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Pupuk Sae Grow</h1>
+                <p class="text-xl mb-8 px-4">Solusi tepat, Pupuk dengan teknologi Jepang</p>
+                <p class="text-xl mb-8 px-4">Saya Admin resmi pupuk SEA GROW siap membantu anda</p>
+                <button class="bg-gradient-to-r from-green-700 to-green-500 text-white px-6 py-3 rounded-tl-3xl rounded-br-3xl rounded-tr rounded-bl text-lg font-semibold hover:bg-gray-100 hover:text-white hover:scale-105 transform hover:shadow-lg transition-all duration-300 ease-in-out transition-smooth">
+                    <a href="https://wa.me/6285733331140?text=Halo,%20saya%20ingin%20memesan%20produk%20Pupuk%20Sae%20Grow.%0ANama%20:%0AAlamat%20:%0APilihan%20paket%20:" target="_blank">Pesan Sekarang</a>
+                </button>
+            </div>
+        </section>
+
+        <!-- Deskripsi Section -->
+        <section class="py-10 px-4 bg-gradient-to-r from-green-700 to-green-500 text-white">
+            <div class="flex-shrink-0">
+                <img src="/images/iconpupuk.png" alt="pupuk" class="w-44 h-44 mx-auto mb-4">
+            </div>
+            <div class="text-center">
+                <h2 class="text-2xl font-bold mb-4 uppercase">APA ITU PUPUK SAE GROW?</h2>
+                <p class="mb-2 text-justify">Pupuk Saegrow adalah solusi yang efektif untuk meningkatkan pertumbuhan dan kualitas berbagai jenis tanaman. Dengan kandungan unsur hara yang lengkap, manfaat yang luar biasa, dan teknologi tinggi yang digunakan dalam pembuatannya, pupuk ini dapat membantu tanaman Anda tumbuh dengan optimal dan menghasilkan buah yang berkualitas tinggi. Pastikan untuk mengikuti aturan pakai dan frekuensi penggunaan yang telah ditentukan untuk mendapatkan hasil yang maksimal.</p>
+            </div>
+            <div class="text-center mt-6">
+                <h2 class="text-2xl font-bold mb-4 uppercase">Kandungan Hara dalam Pupuk Saegrow</h2>
+                <p class="mb-2 text-justify">Pupuk Saegrow mengandung unsur hara makro dan mikro yang sangat penting untuk pertumbuhan masa vegetatif dan generatif pada tanaman.</p>
+            </div>
+            <div>
+                <p class="text-center text-xl font-semibold">Kandungan Hara Makro Primer:</p>
+                <div class="lg:grid lg:place-items-center">
+                    <ul class="list-disc list-outside marker:text-white px-4">
+                        <li class="">Total Nitrogen (N): 0.31 %wt</li>
+                        <li class="">Total Fosfor (P2O5): 2.25 %wt</li>
+                        <li class="">Total Kalium (K2O): 769 %wt</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p class="text-center text-xl font-semibold">Kandungan Hara Makro Primer:</p>
+                <div class="lg:grid lg:place-items-center">
+                    <ul class="list-disc list-outside marker:text-white px-4">
+                        <li class="">Sulfur (S): 0.800 %wt</li>
+                        <li class="">Kalsium (CaO): 0.200 %wtt</li>
+                        <li class="">Magnesium (MgO): 2.50 %wt</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p class="text-center text-xl font-semibold">Kandungan Hara Makro Primer:</p>
+                <div class="lg:grid lg:place-items-center">
+                    <ul class="list-disc list-outside marker:text-white px-4">
+                        <li class="">Silika dan Gel Silika: 10 %wt</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p class="text-center text-xl font-semibold">Kandungan Hara Makro Primer:</p>
+                <div class="lg:grid lg:place-items-center">
+                    <ul class="list-disc list-outside marker:text-white px-4">
+                        <li class="">Logam Berat (10-500 ppm): 12.79 %wt</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p class="text-center text-xl font-semibold">Kandungan Hara Makro Primer:</p>
+                <div class="lg:grid lg:place-items-center">
+                    <ul class="list-disc list-outside marker:text-white px-4">
+                        <li class="">Mikroba Berbahaya: 0 %wt</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#paket" class="flex justify-center">
+                <button class="bg-gradient-to-r from-gray-100 to-gray-300 text-green-700 px-6 py-3 mt-6 rounded-tl-3xl rounded-br-3xl rounded-tr rounded-bl text-lg font-semibold hover:bg-gray-100 hover:text-green-700 hover:scale-105 transform hover:shadow-lg transition-all duration-300 ease-in-out transition-smooth">
+                    Pilihan Paket
+                </button>
+            </a>
+        </section>
+
+        <!-- Manfaat Pupuk Organik Section -->
+        <section class="flex flex-col justify-center items-center py-10">
+            <h2 class="text-green-700 text-2xl uppercase text-center font-bold mb-4 px-4">Manfaat Pupuk Bestfarm Pillow Slow Release</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center md:space-x-10 px-6">
+                <img src="images/seagrow.png" alt="Bestfarm Product" class="w-64 h-64 mb-4">
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <!-- Ikon Ceklis bg-gradient-to-r from-green-700 to-green-500 -->
+                        <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Efisiensi penyerapan nutrisi
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Ramah lingkungan
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Cocok untuk tanaman batang besar dan keras
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Meningkatkan kesuburan tanah
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Keseimbangan pH Tanah
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Pengembangan Akar yang Baik
+                    </li>
+                </ul>
+            </div>
+            <button class="flex items-center justify-center bg-gradient-to-r from-green-700 to-green-500 text-white px-6 py-3 mt-6 rounded-tl-3xl rounded-br-3xl rounded-tr rounded-bl text-lg font-semibold hover:bg-gray-100 hover:text-white hover:scale-105 transform hover:shadow-lg transition-all duration-300 ease-in-out transition-smooth">
+                <a href="https://wa.me/6285733331140?text=Halo,%20saya%20ingin%20memesan%20produk%20Pupuk%20Sae%20Grow.%0ANama%20:%0AAlamat%20:%0APilihan%20paket%20:" target="_blank">Pesan Sekarang</a>
+            </button>
+        </section>
+
+        <!-- Cara Penggunaan Section -->
+        <section class="flex justify-center pb-10">
+            <div class="relative bg-white p-4 w-full max-w-2xl">
+                <h2 class="text-green-700 text-2xl uppercase font-bold mb-6 text-center px-4">ATURAN PAKAI PUPUK SAEGROW</h2>
+                <div class="relative">
+                    <div class="absolute left-3 top-6 h-3/4 border-l-2 border-green-400"></div>
+
+                    <div class="flex items-start mb-6">
+                        <div class="relative flex-shrink-0">
+                            <div class="bg-gradient-to-r from-green-700 to-green-500 text-white w-10 h-10 flex items-center justify-center rounded-full font-bold shadow-lg">1</div>
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold">1. Dosis Pupuk Berdasarkan Usia Tanaman</p>
+                            <ul class="list-disc list-outside ml-6">
+                                <li>5-8 Tahun: Gunakan 2 sendok takar.</li>
+                                <li>8-12 Tahun: Gunakan 3 sendok takar.</li>
+                                <li>12-18 Tahun: Gunakan 4 sendok takar.</li>
+                                <li>18-25 Tahun: Gunakan 5 sendok takar.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start mb-6">
+                        <div class="relative flex-shrink-0">
+                            <div class="bg-gradient-to-r from-green-700 to-green-500 text-white w-10 h-10 flex items-center justify-center rounded-full font-bold shadow-lg">2</div>
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold mt-4">2. Penempatan Pupuk</p>
+                            <ul class="list-disc list-outside ml-6">
+                                <li>Beri jarak 20-30 cm di sisi pohon sawit (kanan & kiri).</li>
+                                <li>Gunakan @50 gram atau 1 sendok takar tiap lubang.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start mb-6">
+                        <div class="relative flex-shrink-0">
+                            <div class="bg-gradient-to-r from-green-700 to-green-500 text-white w-10 h-10 flex items-center justify-center rounded-full font-bold shadow-lg">3</div>
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold mt-4">3. Frekuensi Penggunaan</p>
+                            <ul class="list-disc list-outside ml-6">
+                                <li>Penggunaan terbaik dilakukan 3 bulan sekali untuk hasil yang lebih baik.</li>
+                                <li>Minimal 1 tahun 3 kali atau maksimal 4 kali pemupukan.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimoni -->
+        <section class="relative max-w-2xl mx-auto pt-10 pb-6">
+            <h2 class="text-green-700 text-2xl uppercase text-center font-bold mb-4 px-4">Testimonial dari para pembeli Pupuk Sea Grow.</h2>
+        </section>
+
+        <!-- Youtube -->
+        <section class="flex justify-center pb-10 px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Video 1 -->
+                <div class="flex justify-center flex-col items-center mb-2 text-center">
+                    <p class="mb-4 text-lg font-semibold">Testimoni Dari Petani Kelapa Sawit</p>
+                    
+                    <iframe src="https://www.youtube.com/embed/9OyvjURkX5s?si=FWVplRxzReQDv48P" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen
+                    loading="lazy"
+                    style="width: 100%; height: 315px; max-width: 560px;"></iframe>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="flex justify-center flex-col items-center mb-2 text-center">
+                    <p class="mb-4 text-lg font-semibold">Testimoni Dari Petani Kelapa Sawit Riau</p>
+                    
+                    <iframe src="https://www.youtube.com/embed/_SI95g_A3ZU?si=c3AFt2pRlQOvtH_z" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen
+                    loading="lazy"
+                    style="width: 100%; height: 315px; max-width: 560px;"></iframe>
+                </div>
+            
+                <!-- Video 3 -->
+                <div class="flex justify-center flex-col items-center mb-2 text-center">
+                    <p class="mb-4 text-lg font-semibold">Penggunaan Pupuk SAEGROW Oleh PL Pertanian</p>
+                    
+                    <iframe src="https://www.youtube.com/embed/Q6exxUNsfr4?si=16uVWM6nJM8YVsJA" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen
+                    loading="lazy"
+                    style="width: 100%; height: 315px; max-width: 560px;"></iframe>
+                </div>
+
+                <!-- Video 4 -->
+                 <div class="flex justify-center flex-col items-center mb-2 text-center">
+                    <p class="mb-4 text-lg font-semibold">Testimoni Dari Petani Kelapa Sawit</p>
+                    <iframe src="https://www.youtube.com/embed/pqZ1pTWw_MI?si=wIPg-yWlf6o9Ds1B" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen
+                    loading="lazy"
+                    style="width: 100%; height: 315px; max-width: 560px;"></iframe>
+                </div>
+
+                <!-- Video 5 -->
+                 <div class="flex justify-center flex-col items-center mb-2 text-center">
+                    <p class="mb-4 text-lg font-semibold">Orderan Pupuk Saegrow untuk Kelapa Sawit</p>
+                    <iframe src="https://www.youtube.com/embed/q8eTqJ8iJdU?si=ghyadVRoRbhFHHLv" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen
+                    loading="lazy"
+                    style="width: 100%; height: 315px; max-width: 560px;"></iframe>
+                </div>
+
+                <!-- Video 6 -->
+                 <div class="flex justify-center flex-col items-center mb-2 text-center">
+                    <p class="mb-4 text-lg font-semibold">Testimoni Dari Petani Kelapa Sawit Kalimantan Timur</p>
+                    <iframe src="https://www.youtube.com/embed/yiT67v39EvE?si=0MjB8WX7rETAv9R6" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen
+                    loading="lazy"
+                    style="width: 100%; height: 315px; max-width: 560px;"></iframe>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Harga Section -->
+        <section id="paket" class="flex flex-col justify-center px-4 items-center py-10 gap-8">
+            <h2 class="text-4xl font-bold text-green-700 text-center uppercase">Perincian Biaya Pemupukan Menggunakan SAEGROW:</h2>
+
+            <!-- FO Package Section -->
+            <div class="max-w-4xl mx-auto bg-white p-8 border-2 border-red-700 rounded-lg shadow-lg space-y-12">
+                <div>
+                  <h2 class="text-2xl font-bold text-red-600 text-center mb-6">Paket Pupuk FO</h2>
+                  
+                  <div class="bg-gray-50 border-l-4 border-red-600 p-4 rounded-lg">
+                    <ul class="space-y-4">
+                      <li class="flex items-start">
+                        <span class="text-red-600 text-lg mr-2">✔️</span>
+                        <span><strong>Per PV (kantong):</strong> Ada tambahan Rp 100.000,-</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-green-600 text-lg mr-2">✔️</span>
+                        <span><strong>Harga FO:</strong> Rp 2,5 juta mendapatkan 14 PV (kantong) @Rp 178.500,-</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-green-600 text-lg mr-2">✔️</span>
+                        <span><strong>Biaya tambahan:</strong> Rp 2,5 juta + Rp 1.400.000,- (14 PV x Rp 100.000,-)</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-green-600 text-lg mr-2">✔️</span>
+                        <span><strong>Total Harga:</strong> Rp 3.900.000,- (per FO)</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-green-600 text-lg mr-2">✔️</span>
+                        <span><strong>Isi per PV:</strong> 2 kg</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-green-600 text-lg mr-2">✔️</span>
+                        <span><strong>Dosis Pemupukan:</strong> 1 batang 2 sendok @ 0,5 mg</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-green-600 text-lg mr-2">✔️</span>
+                        <span>1 PV (kantong) 2 kg / 1 mg = untuk 20 batang</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-green-600 text-lg mr-2">✔️</span>
+                        <span><strong>1 Ha sawit:</strong> 135 batang = butuh 7 PV (kantong)</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-green-600 text-lg mr-2">✔️</span>
+                        <span><strong>Biaya Pemupukan Per Hektar:</strong> Rp 1.950.000,- (1 FO untuk 2 Hektar)</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="w-full bg-gradient-to-r from-red-600 to-red-400 text-white px-6 py-3 mt-6 rounded-tl-3xl rounded-br-3xl rounded-tr rounded-bl text-lg font-semibold hover:bg-gray-100 hover:text-white hover:scale-105 transform hover:shadow-lg transition-all duration-300 ease-in-out transition-smooth">
+                      <a href="https://wa.me/6285733331140?text=Halo,%20saya%20ingin%20memesan%20produk%20Pupuk%20Sae%20Grow%20Paket%20FO.%0ANama%20:%0AAlamat%20:%0APilihan%20paket%20:%20Paket%20FO" target="_blank">Pesan Sekarang</a>
+                  </button>
+                </div>
+            </div>
+            
+                <!-- RO Package Section -->
+            <div class="max-w-4xl mx-auto bg-white p-8 border-2 border-blue-700 rounded-lg shadow-lg space-y-12">
+                <div>
+                  <h2 class="text-2xl font-bold text-blue-600 text-center mb-6">Paket Pupuk RO</h2>
+                  
+                  <div class="bg-gray-50 border-l-4 border-blue-600 p-4 rounded-lg">
+                    <ul class="space-y-4">
+                      <li class="flex items-start">
+                        <span class="text-blue-600 text-lg mr-2">✔️</span>
+                        <span><strong>Per PV (kantong):</strong> Ada tambahan Rp 100.000,-</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-blue-600 text-lg mr-2">✔️</span>
+                        <span><strong>Harga RO:</strong> Rp 2 juta mendapatkan 16 PV (kantong) @Rp 125.000,- per PV</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-blue-600 text-lg mr-2">✔️</span>
+                        <span><strong>Total Harga per PV:</strong> Rp 225.000,- (Rp 125.000,- + Rp 100.000,-)</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-blue-600 text-lg mr-2">✔️</span>
+                        <span><strong>Isi per PV:</strong> 2 kg</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-blue-600 text-lg mr-2">✔️</span>
+                        <span><strong>Dosis Pemupukan:</strong> 1 batang 2 sendok @ 0,5 mg</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-blue-600 text-lg mr-2">✔️</span>
+                        <span>1 PV (kantong) 2 kg / 1 mg = untuk 20 batang</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-blue-600 text-lg mr-2">✔️</span>
+                        <span><strong>1 Ha sawit:</strong> 135 batang = butuh 7 PV (kantong)</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="text-blue-600 text-lg mr-2">✔️</span>
+                        <span><strong>Biaya Pemupukan Per Hektar:</strong> Rp 1.575.000,- (Rp 225.000,- x 7 PV)</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="w-full bg-gradient-to-r from-blue-600 to-blue-400 text-white px-6 py-3 mt-6 rounded-tl-3xl rounded-br-3xl rounded-tr rounded-bl text-lg font-semibold hover:bg-gray-100 hover:text-white hover:scale-105 transform hover:shadow-lg transition-all duration-300 ease-in-out transition-smooth">
+                      <a href="https://wa.me/6285733331140?text=Halo,%20saya%20ingin%20memesan%20produk%20Pupuk%20Sae%20Grow%20Paket%20RO.%0ANama%20:%0AAlamat%20:%0APilihan%20paket%20:%20Paket%20RO" target="_blank">Pesan Sekarang</a>
+                  </button>
+                </div>
+            
+            </div>
+        </section>
+        
+        <!-- Garansi -->
+        <section class="container mx-auto py-10 px-4">
+            <div class="flex flex-col items-center justify-center text-center">
+                <h2 class="text-red-700 text-2xl font-bold px-4">100% Garansi Uang Kembali!</h2>
+                <div class="flex-shrink-0">
+                    <img src="/images/garansi.png" alt="Garansi" class="h-64">
+                </div>
+                <p class="mt-4">
+                    Kami pastikan setelah Anda daftar dan melakukan Konfirmasi, barang tidak sesuai jenis paket yang anda pilih atau barang tidak sampai tujuan, 100% uang anda kami kembalikan
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-green-700 to-green-500 py-6">
+        <div class="container mx-auto px-6 text-center text-white">
+            <p class="uppercase">Pupuk Saegrow</p>
+        </div>
+    </footer>
+    
+    <!-- Pop-Up Notification -->
+    <div id="notification-container" class="fixed bottom-2 right-2 space-y-4 w-80 h-16"></div>
+    
+    <!-- WhatsApp Button -->
+    <a
+        href="https://wa.me/6285733331140?text=Halo,%20saya%20ingin%20memesan%20produk%20Pupuk%20Saegrow."
+        target="_blank"
+        class="fixed bottom-6 right-6 bg-green-500 text-white rounded-full p-4 hover:bg-green-600 transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl transform hover:scale-110 animate-bounce-slow z-50 group"
+        id="whatsappButton"
+    >
+        <span
+            id="tooltipText"
+            class="absolute right-full mr-2 top-1/2 transform -translate-y-1/2 bg-white text-green-500 rounded-lg py-2 px-4 opacity-0 transition-opacity duration-300 ease-in-out whitespace-nowrap shadow-md"
+        >
+            Konsultasi Gratis
+        </span>
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+        >
+        <path
+            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+        />
+        </svg>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Pop-Up Notification
+        const buyers = [
+        { name: "Aji S", product: "Paket FO Saegrow", price: "Rp 3.900.000", img: "/images/seagrow.png" },
+        { name: "Sophia", product: "Paket RO Saegrow", price: "Rp 1.575.000", img: "/images/seagrow.png" },
+        { name: "Salman", product: "Paket FO Saegrow", price: "Rp 3.900.000", img: "/images/seagrow.png" },
+        { name: "Sani O", product: "Paket FO Saegrow", price: "Rp 3.900.000", img: "/images/seagrow.png" },
+        { name: "Saputra S", product: "Paket RO Saegrow", price: "Rp 1.575.000", img: "/images/seagrow.png" },
+        { name: "Maman A", product: "Paket FO Saegrow", price: "Rp 3.900.000", img: "/images/seagrow.png" },
+        { name: "Cece", product: "Paket FO Saegrow", price: "Rp 3.900.000", img: "/images/seagrow.png" },
+        { name: "Putra A", product: "Paket RO Saegrow", price: "Rp 1.575.000", img: "/images/seagrow.png" },
+        { name: "Rani", product: "Paket FO Saegrow", price: "Rp 3.900.000", img: "/images/seagrow.png" },
+        { name: "Aulia", product: "Paket RO Saegrow", price: "Rp 1.575.000", img: "/images/seagrow.png" },
+        { name: "Sodikin", product: "Paket RO Saegrow", price: "Rp 1.575.000", img: "/images/seagrow.png" },
+        { name: "Azis A", product: "Paket FO Saegrow", price: "Rp 3.900.000", img: "/images/seagrow.png" },
+        { name: "Bli R", product: "Paket RO Saegrow", price: "Rp 1.575.000", img: "/images/seagrow.png" },
+        ];
+
+        let notificationIndex = 0;
+
+        function showNotification() {
+        const notificationContainer = document.getElementById('notification-container');
+        
+        // Remove any existing notification
+        notificationContainer.innerHTML = '';
+        
+        const buyer = buyers[notificationIndex];
+        const notification = document.createElement('div');
+        notification.className = 'notification';
+        notification.innerHTML = `
+            <img src="${buyer.img}" alt="Product Image">
+            <div class="notification-content">
+            <p class="buyer-name text-sm">${buyer.name} baru saja membeli</p>
+            <p class="product-name text-sm">${buyer.product}</p>
+            <p class="product-price text-sm">${buyer.price}</p>
+            </div>
+            <button class="notification-close">&times;</button>
+        `;
+        
+        // Add close functionality
+        notification.querySelector('.notification-close').onclick = function() {
+            notificationContainer.removeChild(notification);
+        };
+
+        // Add notification to the container
+        notificationContainer.appendChild(notification);
+
+        // Cycle to the next buyer
+        notificationIndex = (notificationIndex + 1) % buyers.length;
+        }
+
+        // Show notifications every 3 seconds
+        setInterval(showNotification, 7000);
+
+
+        // Whatsapp Button
+        const tooltipText = document.getElementById('tooltipText');
+        
+        function toggleTooltip() {
+            tooltipText.classList.toggle('opacity-0');
+        }
+
+        setInterval(toggleTooltip, 7000);
+    </script>
+</body>
+</html>

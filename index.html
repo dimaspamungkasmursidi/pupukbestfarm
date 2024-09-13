@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pupukfarm Indonesia - Pupuk Berkualitas untuk Pertanian Anda</title>
+    <meta
+      name="description"
+      content="Pupukfarm menyediakan pupuk berkualitas tinggi untuk meningkatkan hasil panen dan kesuburan tanah pertanian Anda."
+    />
+    <meta
+      name="keywords"
+      content="Pupuk, Pertanian, Pupuk Organik, Pupuk Kimia, Hasil Panen, Kesuburan Tanah"
+    />
+    <meta name="author" content="Pupukfarm" />
+    <link rel="canonical" href="https://pupukfarm.netlify.app" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pupukfarm.netlify.app" />
+    <meta
+      property="og:title"
+      content="Pupukfarm - Pupuk Berkualitas untuk Pertanian Anda"
+    />
+    <meta
+      property="og:description"
+      content="Pupukfarm menawarkan berbagai jenis pupuk berkualitas tinggi untuk meningkatkan pertumbuhan tanaman dan hasil panen yang optimal."
+    />
+    <meta
+      property="og:image"
+      content="https://pupukfarm.netlify.app/images/logo.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://pupukfarm.netlify.app" />
+    <meta
+      property="twitter:title"
+      content="Pupukfarm - Pupuk Berkualitas untuk Pertanian Anda"
+    />
+    <meta
+      property="twitter:description"
+      content="Dapatkan pupuk terbaik dari Pupukfarm untuk memperbaiki kualitas tanah dan meningkatkan hasil pertanian Anda."
+    />
+    <meta
+      property="twitter:image"
+      content="https://pupukfarm.netlify.app/images/logo.png"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <!-- Tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif; /* Untuk teks utama */
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Merriweather", serif; /* Untuk judul */
+      }
+      .text1 {
+        font-weight: 680px;
+        color: #ffffff;
+        text-shadow: 1px 1px #0e5a34, 2px 2px #2c9a63, 3px 3px #0e5a34,
+          4px 4px #0e5a34, 5px 5px #0e5a34, 6px 6px #0e5a34, 7px 7px #404206,
+          8px 8px 7px #000;
+      }
+      .text2 {
+        font-weight: 700px;
+        font-size: 35px;
+        color: #ffffff;
+        text-shadow: 1px 0px 0px #06251c, -1px 0px 0px #0b1412,
+          0px 1px 0px #0b1412, 0px -1px 0px #0b1412, 1px 1px 2px #000;
+      }
+      .text3 {
+        font-weight: 700px;
+        font-size: 45px;
+        color: #1b9256;
+        text-shadow: 1px 0px 0px #9dffe3, -1px 0px 0px #636363,
+          0px 1px 0px #636363, 0px -1px 0px #636363, 1px 1px 2px #636363;
+      }
+      .pulse {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .bounce {
+        animation: bounce 1.5s infinite;
+      }
+
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
+    </style>
+  </head>
+  <body class="antialiased relative">
+    <!-- Navbar -->
+    <nav
+      class="absolute w-full bg-gradient-to-r from-green-700 to-green-500 opacity-80 backdrop-blur top-0 shadow-md z-20"
+    >
+      <div
+        class="container mx-auto flex justify-between items-center p-4 text-white"
+      >
+        <a href="#contact" class="text-2xl font-bold"></a>
+
+        <ul class="hidden md:flex space-x-6">
+          <li>
+            <a href="#home" class="hover:text-green-800 font-semibold">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="hover:text-green-800 font-semibold"
+              >Tentang</a
+            >
+          </li>
+          <li>
+            <a href="#produk" class="hover:text-green-800 font-semibold"
+              >Produk</a
+            >
+          </li>
+          <li>
+            <a href="#benefits" class="hover:text-green-800 font-semibold"
+              >Benefit</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-green-800 font-semibold"
+              >Kontak</a
+            >
+          </li>
+        </ul>
+
+        <button id="hamburger" class="md:hidden focus:outline-none">
+          <svg
+            id="hamburger-icon"
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            data-state="hamburger"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <ul
+        id="nav-menu"
+        class="md:hidden hidden flex-col bg-gray-100 opacity-70 w-full text-center shadow-md border-t py-4 px-20"
+      >
+        <li>
+          <a
+            href="#home"
+            class="block py-2 hover:text-green-800 font-semibold border-b border-green-800"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#about"
+            class="block py-2 hover:text-green-800 font-semibold border-b border-green-800"
+            >Tentang</a
+          >
+        </li>
+        <li>
+          <a
+            href="#produk"
+            class="block py-2 hover:text-green-800 font-semibold border-b border-green-800"
+            >Produk</a
+          >
+        </li>
+        <li>
+          <a
+            href="#benefits"
+            class="block py-2 hover:text-green-800 font-semibold border-b border-green-800"
+            >Benefit</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            class="block py-2 hover:text-green-800 font-semibold"
+            >Kontak</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Banner Home -->
+      <section
+        id="home"
+        class="relative min-h-screen flex items-center justify-center bg-cover bg-center px-2"
+        style="background-image: url('/images/index.jpg')"
+      >
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+        <div class="text-center text-white z-10">
+          <h1 class="text-4xl md:text-5xl font-bold mb-2 uppercase text1">
+            Selamat Datang Di Website Kami
+          </h1>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-4">
+            Pusat Pupuk Best Farming
+          </h2>
+          <p class="text-2xl mb-6">
+            Pupuk majemuk makro dan mikro untuk semua jenis tanaman
+          </p>
+          <button
+            class="bg-gradient-to-r from-green-700 to-green-500 text-white px-6 py-3 rounded-tl-3xl rounded-br-3xl rounded-tr rounded-bl text-lg font-semibold hover:bg-green-600 hover:scale-105 transform hover:shadow-lg transition-all duration-300 ease-in-out transition-smooth"
+          >
+            <a href="#produk" class="">Lihat Produk</a>
+          </button>
+        </div>
+      </section>
+
+      <!-- Tentang Kami -->
+      <section
+        id="about"
+        class="py-20 bg-gradient-to-r from-green-700 to-green-500"
+      >
+        <div class="container mx-auto px-6 text-white">
+          <div class="flex-shrink-0">
+            <img
+              src="/images/iconpupuk.png"
+              alt="pupuk"
+              class="w-44 h-44 mx-auto mb-4"
+            />
+          </div>
+          <h2 class="text-3xl font-bold mb-2 text-center uppercase">
+            Kami Perusahaan Resmi Pupuk BestFarm
+          </h2>
+          <p class="text-center max-w-2xl mx-auto">
+            Sebelumnya saya ucapkan terimakasih karena anda sudah menyediakan
+            waktu sebentar untuk membaca penawaran spesial ini.
+          </p>
+        </div>
+      </section>
+
+      <!-- Permasalahan -->
+      <section
+        id="home"
+        class="relative min-h-screen flex flex-col items-center justify-center bg-cover backdrop-filter backdrop-blur-sm bg-center px-2"
+        style="background-image: url('/images/tani.jpg')"
+      >
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="text-white z-10 max-w-4xl">
+          <h1
+            class="text-2xl md:text-4xl text-center font-bold mb-2 uppercase text1"
+          >
+            PERNAH MERASA FRUSTRASI KARENA GAGAL PANEN MESKI SUDAH MODAL BESAR?
+          </h1>
+          <h2 class="text-xl md:text-2xl text-center font-semibold mb-4">
+            DAN BAPAK IBU JUGA MENGALAMI HAL SEPERTI INI :
+          </h2>
+          <div class="flex lg:justify-center gap-2 mb-2">
+            <div class="flex-shrink-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+                class="w-10 h-10 border-4 border-red-500 rounded-full"
+              >
+                <path
+                  fill="#F44336"
+                  d="M21.5 4.5H26.501V43.5H21.5z"
+                  transform="rotate(45.001 24 24)"
+                ></path>
+                <path
+                  fill="#F44336"
+                  d="M21.5 4.5H26.5V43.501H21.5z"
+                  transform="rotate(135.008 24 24)"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-lg text-start">SERING KENA PENYAKIT DAN HAMA?</p>
+          </div>
+          <div class="flex lg:justify-center gap-2 mb-2">
+            <div class="flex-shrink-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+                class="w-10 h-10 border-4 border-red-500 rounded-full"
+              >
+                <path
+                  fill="#F44336"
+                  d="M21.5 4.5H26.501V43.5H21.5z"
+                  transform="rotate(45.001 24 24)"
+                ></path>
+                <path
+                  fill="#F44336"
+                  d="M21.5 4.5H26.5V43.501H21.5z"
+                  transform="rotate(135.008 24 24)"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-lg text-start">
+              MODAL SUDAH BESAR, TETAP GAGAL PANEN?
+            </p>
+          </div>
+          <div class="flex lg:justify-center gap-2 mb-2">
+            <div class="flex-shrink-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+                class="w-10 h-10 border-4 border-red-500 rounded-full"
+              >
+                <path
+                  fill="#F44336"
+                  d="M21.5 4.5H26.501V43.5H21.5z"
+                  transform="rotate(45.001 24 24)"
+                ></path>
+                <path
+                  fill="#F44336"
+                  d="M21.5 4.5H26.5V43.501H21.5z"
+                  transform="rotate(135.008 24 24)"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-lg text-start">
+              SAAT CUACA EKSTREM, PANIK DAN BINGUNG?
+            </p>
+          </div>
+          <div class="flex lg:justify-center gap-2 mb-2">
+            <div class="flex-shrink-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+                class="w-10 h-10 border-4 border-red-500 rounded-full"
+              >
+                <path
+                  fill="#F44336"
+                  d="M21.5 4.5H26.501V43.5H21.5z"
+                  transform="rotate(45.001 24 24)"
+                ></path>
+                <path
+                  fill="#F44336"
+                  d="M21.5 4.5H26.5V43.501H21.5z"
+                  transform="rotate(135.008 24 24)"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-lg text-start">
+              BUAH TIDAK MAKSIMAL DAN MUDAH LAYU?
+            </p>
+          </div>
+          <div class="flex lg:justify-center gap-2 mb-2">
+            <div class="flex-shrink-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+                class="w-10 h-10 border-4 border-red-500 rounded-full"
+              >
+                <path
+                  fill="#F44336"
+                  d="M21.5 4.5H26.501V43.5H21.5z"
+                  transform="rotate(45.001 24 24)"
+                ></path>
+                <path
+                  fill="#F44336"
+                  d="M21.5 4.5H26.5V43.501H21.5z"
+                  transform="rotate(135.008 24 24)"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-lg text-start">TINGGAL NUNGGU PANEN, MALAH ROBOH?</p>
+          </div>
+          <div class="max-w-2xl mx-auto mt-6">
+            <h2
+              class="text-xl md:text-2xl font-bold mb-8 text-center mx-auto text1"
+            >
+              JANGAN BIARKAN USAHA KERAS PETANI SIA-SIA. MARI KITA UBAH BUNTUNG
+              JADI UNTUNG!
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- Solusi Section -->
+      <section
+      id="produk"
+        class="relative min-h-screen flex flex-col items-center justify-center bg-cover bg-fixed backdrop-filter backdrop-blur-lg bg-center px-2 py-12"
+        style="background-image: url('/images/sawah.jpg')"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-green-700 via-green-400 to-green-200 opacity-60"
+        ></div>
+
+        <div class="z-10 max-w-6xl space-y-8 p-8">
+          <h2
+            class="text-3xl md:text-5xl text-white font-bold text-center mb-4 uppercase text2"
+          >
+            Solusi Terbaik untuk Pertanian Anda
+          </h2>
+          <p class="text-2xl md:text-2xl text-white text-center mb-8 text1">
+            Dapatkan hasil pertanian maksimal dengan solusi dari produk-produk
+            unggulan kami:
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Produk 1 -->
+            <div
+              class="bg-gradient-to-r from-green-100 via-green-200 to-green-400 p-6 rounded-lg shadow-md border border-gray-900"
+            >
+              <div class="flex-shrink-0">
+                <img src="images/ecofarm.png" alt="Produk 1" loading="lazy" />
+              </div>
+              <h3 class="text-2xl font-semibold mb-4">
+                Pupuk Organik Ecofarming
+              </h3>
+              <ul class="space-y-2">
+                <li class="flex items-center">
+                  <!-- Ikon Ceklis bg-gradient-to-r from-green-700 to-green-500 -->
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Memperbaiki Tekstur Tanah
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Mencegah Hama Tanaman
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Meningkatkan Hasil Produksi
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Meningkatkan Kualitas Produksi
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Mempercepat Masa Panen
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Meringankan Biaya Produksi
+                </li>
+              </ul>
+              <button
+                class="bg-gradient-to-r from-green-700 to-green-500 text-white px-6 py-3 mt-4 rounded-tl-3xl rounded-br-3xl rounded-tr rounded-bl text-lg font-semibold hover:bg-green-600 hover:scale-105 transform hover:shadow-lg transition-all duration-300 ease-in-out transition-smooth"
+              >
+                <a href="/Product1.html">Detail Produk</a>
+              </button>
+            </div>
+            <!-- Produk 2 -->
+            <div
+              class="bg-gradient-to-r from-green-100 via-green-200 to-green-400 p-6 rounded-lg shadow-md border border-gray-900"
+            >
+              <div class="flex-shrink-0">
+                <img
+                  src="images/produk2/bestfarm1.png"
+                  alt="Produk 2"
+                  class="mb-4"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="text-2xl font-semibold mb-4">
+                Pupuk Bestfarm Slow Release
+              </h3>
+              <ul class="space-y-2">
+                <li class="flex items-center">
+                  <!-- Ikon Ceklis bg-gradient-to-r from-green-700 to-green-500 -->
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Meningkatkan dan memaksimalkan Buah menjadi lebih Besar 10-50%
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Meningkatkan Hasil Buah lebih cepat
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Meningkatkan imun Tanaman
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Meningkatkan kesuburan tanah
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Mempercepat Masa Panen
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  MMempercepat pertumbuhan Tanaman
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Mengurangi dan mencegah buah Trek
+                </li>
+              </ul>
+              <button
+                class="bg-gradient-to-r from-green-700 to-green-500 text-white px-6 py-3 mt-4 rounded-tl-3xl rounded-br-3xl rounded-tr rounded-bl text-lg font-semibold hover:bg-green-600 hover:scale-105 transform hover:shadow-lg transition-all duration-300 ease-in-out transition-smooth"
+              >
+                <a href="/Product2.html">Detail Produk</a>
+              </button>
+            </div>
+            <!-- Produk 3 -->
+            <div
+              class="bg-gradient-to-r from-green-100 via-green-200 to-green-400 p-6 rounded-lg shadow-md border border-gray-900"
+            >
+              <div class="flex-shrink-0 flex justify-center">
+                <img
+                  src="images/seagrow.png"
+                  alt="Produk 2"
+                  class="mb-4 h-64"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="text-2xl font-semibold mb-4">Pupuk Saegrow</h3>
+              <ul class="space-y-2">
+                <li class="flex items-center">
+                  <!-- Ikon Ceklis bg-gradient-to-r from-green-700 to-green-500 -->
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Efisiensi penyerapan nutrisi
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Ramah lingkungan
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Cocok untuk tanaman batang besar dan keras
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Meningkatkan kesuburan tanah
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Keseimbangan pH Tanah
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Pengembangan Akar yang Baik
+                </li>
+              </ul>
+              <button
+                class="bg-gradient-to-r from-green-700 to-green-500 text-white px-6 py-3 mt-4 rounded-tl-3xl rounded-br-3xl rounded-tr rounded-bl text-lg font-semibold hover:bg-green-600 hover:scale-105 transform hover:shadow-lg transition-all duration-300 ease-in-out transition-smooth"
+              >
+                <a href="/Product3.html">Detail Produk</a>
+              </button>
+            </div>
+            <!-- Produk 4 -->
+            <div
+              class="bg-gradient-to-r from-green-100 via-green-200 to-green-400 p-6 rounded-lg shadow-md border border-gray-900"
+            >
+              <div class="flex-shrink-0">
+                <img
+                  src="images/fotocintesa.png"
+                  alt="Produk 2"
+                  class="mb-4"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="text-2xl font-semibold mb-4">Pupuk Fotosintesa</h3>
+              <ul class="space-y-2">
+                <li class="flex items-center">
+                  <!-- Ikon Ceklis bg-gradient-to-r from-green-700 to-green-500 -->
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Membantu tanaman memanfaatkan energi matahari secara optimal
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Meningkatkan daya tahan tanaman terhadap penyakit
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Menguatkan kulit kayu dan batang tanaman
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Membantu perkembangan akar dan menghasilkan serat berkualitas
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Mempercepat tanaman buah berbunga
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Memperbaiki Kualitas Tanaman
+                </li>
+              </ul>
+              <button
+                class="bg-gradient-to-r from-green-700 to-green-500 text-white px-6 py-3 mt-4 rounded-tl-3xl rounded-br-3xl rounded-tr rounded-bl text-lg font-semibold hover:bg-green-600 hover:scale-105 transform hover:shadow-lg transition-all duration-300 ease-in-out transition-smooth"
+              >
+                <a href="/Product4.html">Detail Produk</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kenapa Harus Menggunakan Pupuk -->
+      <section
+        id="benefits"
+        class="py-12 bg-gradient-to-r from-green-700 to-green-500 text-white"
+      >
+        <div class="container mx-auto px-6 lg:px-12">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl lg:text-5xl font-bold uppercase tracking-wide">
+              Kenapa Harus Menggunakan Pupuk?
+            </h2>
+            <p class="mt-4 text-lg lg:text-xl">
+              Temukan manfaat luar biasa pupuk yang dapat meningkatkan kualitas
+              dan hasil pertanian Anda!
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Benefit 1 -->
+            <div
+              class="bg-white text-green-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
+            >
+              <div class="flex items-center mb-4">
+                <svg
+                  class="h-10 w-10 text-green-500"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18.93A8.93 8.93 0 1 1 20.93 12 8.94 8.94 0 0 1 12 20.93zM11 11h2v5h-2zm0-4h2v2h-2z"
+                  />
+                </svg>
+                <h3 class="text-xl font-semibold ml-3">
+                  Meningkatkan Pertumbuhan
+                </h3>
+              </div>
+              <p>
+                Pupuk membantu tanaman menyerap nutrisi dengan lebih efisien,
+                sehingga mempercepat pertumbuhan dan menghasilkan tanaman yang
+                lebih sehat dan produktif.
+              </p>
+            </div>
+
+            <!-- Benefit 2 -->
+            <div
+              class="bg-white text-green-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
+            >
+              <div class="flex items-center mb-4">
+                <svg
+                  class="h-10 w-10 text-green-500"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M13 12h7v2h-7zM3 12h7v2H3zM11 7h2v10h-2z" />
+                </svg>
+                <h3 class="text-xl font-semibold ml-3">
+                  Meningkatkan Hasil Panen
+                </h3>
+              </div>
+              <p>
+                Dengan penggunaan pupuk yang tepat, hasil panen dapat meningkat
+                hingga dua kali lipat, memastikan keuntungan yang lebih besar
+                untuk petani.
+              </p>
+            </div>
+
+            <!-- Benefit 3 -->
+            <div
+              class="bg-white text-green-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
+            >
+              <div class="flex items-center mb-4">
+                <svg
+                  class="h-10 w-10 text-green-500"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M10 3h4v2h-4zm6 16H8v-2h8zM4 11h16v2H4z" />
+                </svg>
+                <h3 class="text-xl font-semibold ml-3">
+                  Menjaga Kesuburan Tanah
+                </h3>
+              </div>
+              <p>
+                Pupuk organik membantu memperbaiki struktur tanah dan menjaga
+                keseimbangan mikroorganisme di dalam tanah, sehingga tanah tetap
+                subur dan produktif.
+              </p>
+            </div>
+
+            <!-- Benefit 4 -->
+            <div
+              class="bg-white text-green-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
+            >
+              <div class="flex items-center mb-4">
+                <svg
+                  class="h-10 w-10 text-green-500"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2a10 10 0 0 0-7.09 17.09l1.42-1.42a8 8 0 1 1 5.66-5.66l1.42-1.42A10 10 0 0 0 12 2zm0 16a6 6 0 1 0 6-6 6 6 0 0 0-6 6z"
+                  />
+                </svg>
+                <h3 class="text-xl font-semibold ml-3">
+                  Mengurangi Penggunaan Pestisida
+                </h3>
+              </div>
+              <p>
+                Pupuk dapat meningkatkan kekebalan tanaman terhadap serangan
+                hama dan penyakit, sehingga mengurangi kebutuhan penggunaan
+                pestisida.
+              </p>
+            </div>
+
+            <!-- Benefit 5 -->
+            <div
+              class="bg-white text-green-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
+            >
+              <div class="flex items-center mb-4">
+                <svg
+                  class="h-10 w-10 text-green-500"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 22.5C6 22.5 1.5 18 1.5 12S6 1.5 12 1.5 22.5 6 22.5 12 18 22.5 12 22.5z"
+                  />
+                </svg>
+                <h3 class="text-xl font-semibold ml-3">Ramah Lingkungan</h3>
+              </div>
+              <p>
+                Pupuk organik dibuat dari bahan-bahan alami yang tidak merusak
+                lingkungan, membantu menjaga keseimbangan ekosistem pertanian.
+              </p>
+            </div>
+
+            <!-- Benefit 6 -->
+            <div
+              class="bg-white text-green-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
+            >
+              <div class="flex items-center mb-4">
+                <svg
+                  class="h-10 w-10 text-green-500"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 4h-2V2H6v2H4C2.9 4 2 4.9 2 6v14c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H4V6h2v2h8V6h2v14z"
+                  />
+                </svg>
+                <h3 class="text-xl font-semibold ml-3">Efisiensi Biaya</h3>
+              </div>
+              <p>
+                Penggunaan pupuk secara tepat dan teratur dapat mengurangi biaya
+                produksi jangka panjang, sekaligus meningkatkan hasil panen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kabar Gembira -->
+      <section
+        class="pt-10"
+      >
+        <div class="container mx-auto text-center">
+          <h1 class="text-4xl text-green-700 font-bold mb-4 px-2 text3">KABAR GEMBIRA...!!!</h1>
+          <p class="text-xl px-4">
+            Kami membuka peluang bisnis di seluruh Indonesia bagi yang ingin
+            menjadi Distributor / Reseller. Pastikan Anda lebih awal mengambil peluang ini
+            di wilayah Anda.
+          </p>
+        </div>
+      </section>
+
+      <!-- Syarat Menjadi Distributor / Reseller -->
+        <div class="max-w-2xl mx-auto">
+            <div class="p-6">
+                <h2 class="text-green-700 text-3xl uppercase font-bold text-center mb-4 px-4">SYARAT MENJADI DISTRIBUTOR / RESELLER</h2>
+
+                <!-- FAQ Item 0 -->
+                <div class="border-b border-gray-200">
+                    <button class="w-full text-left p-4 font-semibold text-gray-800 focus:outline-none flex justify-between items-center" onclick="toggleFAQ(1)">
+                        <span>Apa Keuntungan Menjadi Distributor / Reseller Resmi?</span>
+                        <svg id="arrow1" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06-.02L10 10.94l3.71-3.75a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.25 8.23a.75.75 0 01-.02-1.06z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div id="faq1" class="max-h-0 overflow-hidden transition-max-height duration-300">
+                        <p class="p-4 text-gray-600">Untuk Pembelanjaan kedua Setelah Bergabung menjadi Distributor / Reseller Resmi Akan Mendapatkan Harga Yang Lebih Murah.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 1 -->
+                <div class="border-b border-gray-200">
+                    <button class="w-full text-left p-4 font-semibold text-gray-800 focus:outline-none flex justify-between items-center" onclick="toggleFAQ(1)">
+                        <span>Bagaimana cara menjadi Distributor / Reseller?</span>
+                        <svg id="arrow1" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06-.02L10 10.94l3.71-3.75a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.25 8.23a.75.75 0 01-.02-1.06z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div id="faq1" class="max-h-0 overflow-hidden transition-max-height duration-300">
+                        <p class="p-4 text-gray-600">Untuk bergabung menjadi Distributor / Reseller anda melakukan registrasi Rp 100.000, lalu melakukan belanja paket produk 1X saja sesuai kebutuhan.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border-b border-gray-200">
+                    <button class="w-full text-left p-4 font-semibold text-gray-800 focus:outline-none flex justify-between items-center" onclick="toggleFAQ(2)">
+                        <span>Apa saja yang bisa didapatkan dengan jumlah paket tertentu?</span>
+                        <svg id="arrow2" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06-.02L10 10.94l3.71-3.75a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.25 8.23a.75.75 0 01-.02-1.06z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div id="faq2" class="max-h-0 overflow-hidden transition-max-height duration-300">
+                        <ul class="p-4 text-gray-600 list-disc list-inside">
+                            <li>200 Paket = Umroh/Motor Senilai 20 Juta</li>
+                            <li>600 Paket = Mobil Senilai 150 Juta</li>
+                            <li>3000 Paket = Properti Senilai 500 Juta</li>
+                            <li>6000 Paket = Rumah Senilai 1 Miliar</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border-b border-gray-200">
+                    <button class="w-full text-left p-4 font-semibold text-gray-800 focus:outline-none flex justify-between items-center" onclick="toggleFAQ(3)">
+                        <span>Apakah jumlah paket yang terjual bisa hangus?</span>
+                        <svg id="arrow3" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06-.02L10 10.94l3.71-3.75a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.25 8.23a.75.75 0 01-.02-1.06z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div id="faq3" class="max-h-0 overflow-hidden transition-max-height duration-300">
+                        <p class="p-4 text-gray-600">Jumlah paket yang terjual akan terus dihitung tanpa batas waktu dan tanpa hangus, jadi semua Distributor / Reseller berkesempatan untuk mendapatkan hadiah sesuai dengan target penjualan mereka.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <!-- Pilihan Paket -->
+      <section class="container mx-auto mt-6 px-4">
+        <h2 class="text-green-700 text-3xl font-semibold text-center mb-4">
+          PILIHAN PAKET BERGABUNG
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Paket 1 -->
+          <div class="border-2 border-green-600 p-6 rounded-md shadow-lg">
+            <h3 class="text-green-600 text-xl font-bold mb-4 text-center">
+              PAKET BASIC CH
+            </h3>
+            <p class="text-center text-2xl font-bold text-green-600 mb-2">
+              Rp. 2.750.000,-
+            </p>
+            <p class="text-center text-2xl font-bold text-green-600 mb-6">
+              JUMLAH PRODUK 16 PCS
+            </p>
+            <ul class="list-inside list-disc text-gray-600 mb-4">
+              <li>Mendapat 1 ID</li>
+              <li>Gratis Ongkos Kirim</li>
+              <li>Potensi Reward 3,67M</li>
+              <li>Poin Pembelanjaan (Umroh, Motor, Mobil, Rumah 1 Milyar)</li>
+            </ul>
+            <button
+              class="w-full bg-gradient-to-r from-green-700 to-green-400 text-white px-6 py-3 rounded-tl-3xl rounded-br-3xl rounded-tr rounded-bl text-lg font-semibold hover:bg-gray-100 hover:text-green-700 hover:scale-105 transform hover:shadow-lg transition-all duration-300 ease-in-out transition-smooth"
+            >
+              <a
+                href="https://wa.me/6285733331140?text=Halo,%20saya%20ingin%20memesan%20produk%20Paket%20Reguler.%0ANama%20:%0AAlamat%20:%0APilihan%20paket%20:%20Paket%20Basic%20CH"
+                target="_blank"
+                >Gabung Sekarang</a
+              >
+            </button>
+          </div>
+          <!-- Paket 2 -->
+          <div class="border-2 border-green-600 p-6 rounded-md shadow-lg">
+            <h3 class="text-green-600 text-xl font-bold mb-4 text-center">
+              PAKET BASIC MX
+            </h3>
+            <p class="text-center text-2xl font-bold text-green-600 mb-2">
+              Rp. 3.400.000,-
+            </p>
+            <p class="text-center text-2xl font-bold text-green-600 mb-6">
+              JUMLAH PRODUK 28 PCS
+            </p>
+            <ul class="list-inside list-disc text-gray-600 mb-4">
+              <li>Mendapat 1 ID</li>
+              <li>Gratis Ongkos Kirim</li>
+              <li>Potensi Reward 7,34M</li>
+              <li>Poin Pembelanjaan (Umroh, Motor, Mobil, Rumah 1 Milyar)</li>
+            </ul>
+            <button
+              class="w-full bg-gradient-to-r from-green-700 to-green-400 text-white px-6 py-3 rounded-tl-3xl rounded-br-3xl rounded-tr rounded-bl text-lg font-semibold hover:bg-gray-100 hover:text-green-700 hover:scale-105 transform hover:shadow-lg transition-all duration-300 ease-in-out transition-smooth"
+            >
+              <a
+                href="https://wa.me/6285733331140?text=Halo,%20saya%20ingin%20memesan%20produk%20Paket%20Reguler.%0ANama%20:%0AAlamat%20:%0APilihan%20paket%20:%20Paket%20Basic%20MX"
+                target="_blank"
+                >Gabung Sekarang</a
+              >
+            </button>
+          </div>
+          <!-- Paket 3 -->
+          <div class="border-2 border-green-600 p-6 rounded-md shadow-lg">
+            <h3 class="text-green-600 text-xl font-bold mb-4 text-center">
+              PAKET REGULER
+            </h3>
+            <p class="text-center text-2xl font-bold text-green-600 mb-2">
+              Rp. 8.250.000,-
+            </p>
+            <p class="text-center text-2xl font-bold text-green-600 mb-6">
+              JUMLAH PRODUK 48 PCS
+            </p>
+            <ul class="list-inside list-disc text-gray-600 mb-4">
+              <li>Mendapat 3 ID</li>
+              <li>Gratis Ongkos Kirim</li>
+              <li>Potensi Reward 11,01M</li>
+              <li>Poin Pembelanjaan (Umroh, Motor, Mobil, Rumah 1 Milyar)</li>
+            </ul>
+            <button
+              class="w-full bg-gradient-to-r from-green-700 to-green-400 text-white px-6 py-3 rounded-tl-3xl rounded-br-3xl rounded-tr rounded-bl text-lg font-semibold hover:bg-gray-100 hover:text-green-700 hover:scale-105 transform hover:shadow-lg transition-all duration-300 ease-in-out transition-smooth"
+            >
+              <a
+                href="https://wa.me/6285733331140?text=Halo,%20saya%20ingin%20memesan%20produk%20Paket%20Reguler.%0ANama%20:%0AAlamat%20:%0APilihan%20paket%20:%20Paket%20Reguler"
+                target="_blank"
+                >Gabung Sekarang</a
+              >
+            </button>
+          </div>
+          <!-- Paket 4 -->
+          <div class="border-2 border-green-600 p-6 rounded-md shadow-lg">
+            <h3 class="text-green-600 text-xl font-bold mb-4 text-center">
+              PAKET BUSINESS
+            </h3>
+            <p class="text-center text-2xl font-bold text-green-600 mb-2">
+              Rp. 19.250.000,-
+            </p>
+            <p class="text-center text-2xl font-bold text-green-600 mb-6">
+              JUMLAH PRODUK 112 PCS
+            </p>
+            <ul class="list-inside list-disc text-gray-600 mb-4">
+              <li>Mendapat 7 ID</li>
+              <li>Gratis Ongkos Kirim</li>
+              <li>Potensi Reward 25,69M</li>
+              <li>Poin Pembelanjaan (Umroh, Motor, Mobil, Rumah 1 Milyar)</li>
+            </ul>
+            <button
+              class="w-full bg-gradient-to-r from-green-700 to-green-400 text-white px-6 py-3 rounded-tl-3xl rounded-br-3xl rounded-tr rounded-bl text-lg font-semibold hover:bg-gray-100 hover:text-green-700 hover:scale-105 transform hover:shadow-lg transition-all duration-300 ease-in-out transition-smooth"
+            >
+              <a
+                href="https://wa.me/6285733331140?text=Halo,%20saya%20ingin%20memesan%20produk%20Paket%20Reguler.%0ANama%20:%0AAlamat%20:%0APilihan%20paket%20:%20Paket%20Business"
+                target="_blank"
+                >Gabung Sekarang</a
+              >
+            </button>
+          </div>
+          <!-- Paket 5 -->
+          <div class="border-2 border-green-600 p-6 rounded-md shadow-lg">
+            <h3 class="text-green-600 text-xl font-bold mb-4 text-center">
+              PAKET EXECUTIVE
+            </h3>
+            <p class="text-center text-2xl font-bold text-green-600 mb-2">
+              Rp. 41.250.000,-
+            </p>
+            <p class="text-center text-2xl font-bold text-green-600 mb-6">
+              JUMLAH PRODUK 240 PCS
+            </p>
+            <ul class="list-inside list-disc text-gray-600 mb-4">
+              <li>Mendapat 15 ID</li>
+              <li>Gratis Ongkos Kirim</li>
+              <li>Potensi Reward 55,05M</li>
+              <li>Poin Pembelanjaan (Umroh, Motor, Mobil, Rumah 1 Milyar)</li>
+            </ul>
+            <button
+              class="w-full bg-gradient-to-r from-green-700 to-green-400 text-white px-6 py-3 rounded-tl-3xl rounded-br-3xl rounded-tr rounded-bl text-lg font-semibold hover:bg-gray-100 hover:text-green-700 hover:scale-105 transform hover:shadow-lg transition-all duration-300 ease-in-out transition-smooth"
+            >
+              <a
+                href="https://wa.me/6285733331140?text=Halo,%20saya%20ingin%20memesan%20produk%20Paket%20Reguler.%0ANama%20:%0AAlamat%20:%0APilihan%20paket%20:%20Paket%20Executive"
+                target="_blank"
+                >Gabung Sekarang</a
+              >
+            </button>
+          </div>
+          <!-- Paket 6 -->
+          <div class="border-2 border-green-600 p-6 rounded-md shadow-lg">
+            <h3 class="text-green-600 text-xl font-bold mb-4 text-center">
+              PAKET PRIORITY
+            </h3>
+            <p class="text-center text-2xl font-bold text-green-600 mb-2">
+              Rp. 85.250.000,-
+            </p>
+            <p class="text-center text-2xl font-bold text-green-600 mb-6">
+              JUMLAH PRODUK 496 PCS
+            </p>
+            <ul class="list-inside list-disc text-gray-600 mb-4">
+              <li>Mendapat 31 ID</li>
+              <li>Gratis Ongkos Kirim</li>
+              <li>Potensi Reward 113,77M</li>
+              <li>Poin Pembelanjaan (Umroh, Motor, Mobil, Rumah 1 Milyar)</li>
+            </ul>
+            <button
+              class="w-full bg-gradient-to-r from-green-700 to-green-400 text-white px-6 py-3 rounded-tl-3xl rounded-br-3xl rounded-tr rounded-bl text-lg font-semibold hover:bg-gray-100 hover:text-green-700 hover:scale-105 transform hover:shadow-lg transition-all duration-300 ease-in-out transition-smooth"
+            >
+              <a
+                href="https://wa.me/6285733331140?text=Halo,%20saya%20ingin%20memesan%20produk%20Paket%20Reguler.%0ANama%20:%0AAlamat%20:%0APilihan%20paket%20:%20Paket%20Priority"
+                target="_blank"
+                >Gabung Sekarang</a
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-green-50 py-8 px-4 md:px-12 mt-8">
+        <div class="text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-green-600 mb-4">Jangan Khawatir!</h2>
+            <p class="text-gray-700 text-lg md:text-xl mb-6">
+                Transaksi Anda 100% aman karena pembayaran dilakukan langsung ke rekening perusahaan, 
+                <strong>bukan ke rekening pribadi.</strong>
+            </p>
+            <div class="flex justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+            </div>
+            <p class="text-gray-600 text-base mt-4">
+                Anda bisa berbelanja dengan tenang dan nyaman karena kami menjamin keamanan setiap transaksi.
+            </p>
+        </div>
+      </section>    
+
+      <!-- Call to Action -->
+      <section class="container mx-auto my-12 px-4 text-center">
+        <h1 class="text-3xl font-bold text-red-600 mb-4">
+          PROMO SPESIAL DI HARI INI...!!!
+        </h1>
+        <p class="text-xl text-gray-700 mb-6">
+          Bagi yang daftar menjadi Distributor / Reseller Resmi Pupuk Ecofarming hari ini
+          melalui web ini & melakukan pembelanjaan akan mendapatkan fasilitas di
+          bawah ini secara <strong>GRATIS</strong>.
+        </p>
+
+        <ul
+          class="text-left mx-auto mb-8 text-xl text-gray-800 list-disc list-inside"
+        >
+          <li>
+            Mendapatkan buku marketing Plant Perusahaan, Proposal & Buku Panduan
+            tentang pupuk ECOFARMING.
+          </li>
+          <li>
+            Mendapatkan nomor ID Distributor / Reseller Resmi dan terdaftar di PT.BEST
+            ECOFARMING.
+          </li>
+        </ul>
+
+        <h2 class="text-xl font-semibold text-red-500 mb-6">
+          Klik Tombol dibawah untuk Mendapatkan BONUS PROMO!!!
+        </h2>
+
+        <!-- Arrow Down -->
+        <div class="flex justify-center mb-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="red"
+            viewBox="0 0 24 24"
+            width="100"
+            height="100"
+            class="bounce"
+          >
+            <path d="M12 21L1 9h7V3h8v6h7z" />
+          </svg>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="flex justify-center">
+          <button
+            class="bg-gradient-to-r from-green-700 to-green-500 text-white px-6 py-3 mt- rounded-tl-3xl rounded-br-3xl rounded-tr rounded-bl text-lg font-semibold hover:bg-gray-100 hover:text-green-700 hover:scale-105 transform hover:shadow-lg transition-all duration-300 ease-in-out transition-smooth"
+          >
+            <a
+              href="https://wa.me/6285733331140?text=Halo,%20saya%20ingin%20memesan%20produk%20Pupuk%20Ecofarming.%0ANama%20:%0AAlamat%20:%0APilihan%20paket%20:"
+              target="_blank"
+              >Pesan Sekarang</a
+            >
+          </button>
+        </div>
+
+        <!-- Catatan -->
+        <p class="text-sm text-gray-600 mt-6">
+          NB. Setelah Anda mendaftar menjadi distributor resmi, kami akan undang
+          Anda ke Grup Rahasia Khusus Distributor Resmi. Daftar segera!
+        </p>
+      </section>
+
+      <!-- Garansi -->
+      <section class="container mx-auto my-12 px-4">
+        <div class="flex flex-col items-center justify-center text-center">
+          <h2 class="text-red-700 text-2xl font-bold px-4">
+            100% Garansi Uang Kembali!
+          </h2>
+          <div class="flex-shrink-0">
+            <img src="/images/garansi.png" alt="Garansi" class="h-64" />
+          </div>
+          <p class="mt-4">
+            Kami pastikan setelah Anda daftar dan melakukan Konfirmasi, barang
+            tidak sesuai jenis paket yang anda pilih atau barang tidak sampai
+            tujuan, 100% uang anda kami kembalikan
+          </p>
+        </div>
+      </section>
+
+      <!-- Kontak -->
+      <section id="contact" class="py-20 bg-gradient-to-r from-green-700 to-green-400">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold mb-8 text-center text-white">Konsultasi Gratis</h2>
+          <form class="max-w-lg mx-auto flex flex-col" id="contact-form">
+            <div class="mb-4">
+              <label for="name" class="block font-semibold mb-1 text-white">Nama</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-700"
+                placeholder="Masukkan nama anda.."
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block font-semibold mb-1 text-white"
+                >Pesan</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-700"
+                placeholder="Tulis pesan anda.."
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="bg-gradient-to-r from-gray-400 to-gray-200 text-white px-6 py-3 mt- rounded-tl-3xl rounded-br-3xl rounded-tr rounded-bl text-lg font-semibold hover:bg-green-600 hover:text-white hover:scale-105 transform hover:shadow-lg transition-all duration-300 ease-in-out transition-smooth"
+            >
+              Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pop-Up Notification -->
+    <div
+      id="notification-container"
+      class="fixed bottom-2 right-2 space-y-4 w-80 h-16"
+    ></div>
+
+    <!-- WhatsApp Button -->
+    <a
+      href="https://wa.me/6285733331140?text=Halo,%20saya%20ingin%20bertanya%20mengenai%20produk%20pupuk."
+      target="_blank"
+      class="fixed bottom-6 right-6 bg-green-500 text-white rounded-full p-4 hover:bg-green-600 transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl transform hover:scale-110 animate-bounce-slow z-50 group"
+      id="whatsappButton"
+    >
+      <span
+        id="tooltipText"
+        class="absolute right-full mr-2 top-1/2 transform -translate-y-1/2 bg-white text-green-500 rounded-lg py-2 px-4 opacity-0 transition-opacity duration-300 ease-in-out whitespace-nowrap shadow-md"
+      >
+        Konsultasi Gratis
+      </span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-8 w-8"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+        />
+      </svg>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+      // Smooth Scroll
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Hamburger Menu
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("nav-menu");
+      const hamburgerIcon = document.getElementById("hamburger-icon");
+
+      hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("hidden");
+
+        // Toggle Hamburger to X and vice versa
+        if (hamburgerIcon.getAttribute("data-state") === "hamburger") {
+          hamburgerIcon.setAttribute("data-state", "close");
+          hamburgerIcon.innerHTML = `
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                `;
+        } else {
+          hamburgerIcon.setAttribute("data-state", "hamburger");
+          hamburgerIcon.innerHTML = `
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                `;
+        }
+      });
+
+      // Kontak
+      const form = document.getElementById("contact-form");
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const message = document.getElementById("message").value;
+        const url = `https://wa.me/6285891821080?text=Halo,%20saya%20ingin%20berkonsultasi..%0ANama%20:%20${encodeURIComponent(
+          name
+        )}%0APesan%20:%20${encodeURIComponent(message)}`;
+        window.open(url, "_blank");
+      });
+      
+    //   Dropdown
+    function toggleFAQ(faqNumber) {
+        const faq = document.getElementById(`faq${faqNumber}`);
+        const arrow = document.getElementById(`arrow${faqNumber}`);
+        
+        // Check if it's currently open
+        if (faq.style.maxHeight) {
+            faq.style.maxHeight = null; // Close the content
+            arrow.classList.remove('transform', 'rotate-180'); // Reset arrow direction
+        } else {
+            faq.style.maxHeight = faq.scrollHeight + "px"; // Open the content
+            arrow.classList.add('transform', 'rotate-180'); // Rotate the arrow
+        }
+    }
+
+      // Pop-Up Notification
+      const buyers = [
+        {
+          name: "Dewi P",
+          product: "Paket 48 Box Ecofarming",
+          price: "Rp 7.600.000",
+          img: "/images/ecofarm.png",
+        },
+        {
+          name: "Putri T",
+          product: "Paket 14 Box Ecofarming",
+          price: "Rp 2.600.000",
+          img: "/images/ecofarm.png",
+        },
+        {
+          name: "Hari S",
+          product: "Paket 48 Box BestFarm",
+          price: "Rp 8.590.000",
+          img: "/images/bestfarm.png",
+        },
+        {
+          name: "Aji S",
+          product: "Paket FO Saegrow",
+          price: "Rp 3.900.000",
+          img: "/images/seagrow.png",
+        },
+        {
+          name: "Wawan",
+          product: "Paket 48 Box Ecofarming",
+          price: "Rp 7.600.000",
+          img: "/images/ecofarm.png",
+        },
+        {
+          name: "Raka W",
+          product: "Paket 112 Box BestFarm",
+          price: "Rp 19.910.000",
+          img: "/images/bestfarm.png",
+        },
+        {
+          name: "Akmal",
+          product: "Paket Fotosintesa",
+          price: "Rp 3.500.000",
+          img: "/images/fotocintesa.png",
+        },
+        {
+          name: "Ridho",
+          product: "Paket 496 Box BestFarm",
+          price: "Rp 87.830.000",
+          img: "/images/bestfarm.png",
+        },
+        {
+          name: "Sophia",
+          product: "Paket RO Saegrow",
+          price: "Rp 1.575.000",
+          img: "/images/seagrow.png",
+        },
+        {
+          name: "James W",
+          product: "Paket 48 Box BestFarm",
+          price: "Rp 8.590.000",
+          img: "/images/bestfarm.png",
+        },
+        {
+          name: "David W",
+          product: "Paket 14 Box Ecofarming",
+          price: "Rp 2.600.000",
+          img: "/images/ecofarm.png",
+        },
+        {
+          name: "Ikka",
+          product: "Paket 240 Box BestFarm",
+          price: "Rp 42.550.000",
+          img: "/images/bestfarm.png",
+        },
+        {
+          name: "Maman A",
+          product: "Paket RO Saegrow",
+          price: "Rp 3.900.000",
+          img: "/images/seagrow.png",
+        },
+        {
+          name: "Saputra S",
+          product: "Paket FO Saegrow",
+          price: "Rp 1.575.000",
+          img: "/images/seagrow.png",
+        },
+        {
+          name: "Budi",
+          product: "Paket 48 Box Ecofarming",
+          price: "Rp 7.600.000",
+          img: "/images/ecofarm.png",
+        },
+        {
+          name: "Ahmad",
+          product: "Paket Fotosintesa",
+          price: "Rp 800.000",
+          img: "/images/fotocintesa.png",
+        },
+        {
+          name: "Rini",
+          product: "Paket 496 Box BestFarm",
+          price: "Rp 87.830.000",
+          img: "/images/bestfarm.png",
+        },
+      ];
+
+      let notificationIndex = 0;
+
+      function showNotification() {
+        const notificationContainer = document.getElementById(
+          "notification-container"
+        );
+
+        // Remove any existing notification
+        notificationContainer.innerHTML = "";
+
+        const buyer = buyers[notificationIndex];
+        const notification = document.createElement("div");
+        notification.className = "notification";
+        notification.innerHTML = `
+            <img src="${buyer.img}" alt="Product Image">
+            <div class="notification-content">
+            <p class="buyer-name text-sm">${buyer.name} baru saja membeli</p>
+            <p class="product-name text-sm">${buyer.product}</p>
+            <p class="product-price text-sm">${buyer.price}</p>
+            </div>
+            <button class="notification-close">&times;</button>
+        `;
+
+        // Add close functionality
+        notification.querySelector(".notification-close").onclick =
+          function () {
+            notificationContainer.removeChild(notification);
+          };
+
+        // Add notification to the container
+        notificationContainer.appendChild(notification);
+
+        // Cycle to the next buyer
+        notificationIndex = (notificationIndex + 1) % buyers.length;
+      }
+
+      // Show notifications every 3 seconds
+      setInterval(showNotification, 7000);
+
+      // Whatsapp Button
+      const tooltipText = document.getElementById("tooltipText");
+
+      function toggleTooltip() {
+        tooltipText.classList.toggle("opacity-0");
+      }
+
+      setInterval(toggleTooltip, 7000);
+    </script>
+  </body>
+</html>
